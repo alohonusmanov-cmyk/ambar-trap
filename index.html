@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="uz" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>«AMBAR-DISTRIBUTORS» MCHJ — Zamonaviy Dush Traplari va Klapanlari Ulgurji Distribyutori</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            bronze: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+              800: '#92400e',
+              900: '#78350f',
+            },
+            steel: {
+              800: '#1e293b',
+              900: '#0f172a',
+              950: '#090d16'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass-nav {
+      background: rgba(15, 23, 42, 0.94);
+      backdrop-filter: blur(14px);
+    }
+
+    .metallic-hero {
+      background: radial-gradient(circle at 82% 22%, rgba(217, 119, 6, 0.22) 0%, transparent 45%),
+        radial-gradient(circle at 15% 80%, rgba(148, 163, 184, 0.14) 0%, transparent 45%),
+        linear-gradient(135deg, #090d16 0%, #18181b 55%, #1e293b 100%);
+    }
+
+    .card-metallic {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .card-metallic:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 30px -8px rgba(217, 119, 6, 0.18), 0 8px 12px -6px rgba(15, 23, 42, 0.08);
+    }
+
+    .trap-photo {
+      transition: transform 0.4s ease;
+    }
+
+    .card-metallic:hover .trap-photo {
+      transform: scale(1.06);
+    }
+  </style>
+</head>
+
+<body class="bg-stone-50 text-slate-800 font-sans antialiased selection:bg-bronze-600 selection:text-white">
+
+  <!-- ==================== HEADER & NAVBAR ==================== -->
+  <header
+    class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-slate-800 transition-all duration-300 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center gap-3.5 group">
+          <div
+            class="w-11 h-11 rounded-xl bg-gradient-to-br from-bronze-400 to-bronze-600 flex items-center justify-center text-slate-950 shadow-lg shadow-bronze-500/25 group-hover:scale-105 transition-transform">
+            <i class="fa-solid fa-layer-group text-xl"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-xl font-extrabold tracking-tight text-white leading-none">AMBAR</span>
+              <span
+                class="text-[11px] font-extrabold px-2 py-0.5 rounded bg-bronze-500/20 text-bronze-400 border border-bronze-500/30">TRAPLAR
+                · SUS 304</span>
+            </div>
+            <span class="text-[11px] font-medium text-slate-400 uppercase tracking-wider block mt-1"
+              data-i18n="nav_subtitle">«AMBAR-DISTRIBUTORS» MCHJ</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation (4 Sections) -->
+        <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-300">
+          <a href="#about" class="hover:text-bronze-400 transition-colors" data-i18n="nav_about">1. Kompaniya haqida</a>
+          <a href="#products" class="hover:text-bronze-400 transition-colors" data-i18n="nav_products">2. Katalog
+            (19)</a>
+          <a href="#feedbacks" class="hover:text-bronze-400 transition-colors" data-i18n="nav_feedbacks">3. Mijozlar
+            fikrlari</a>
+          <a href="#contact" class="hover:text-bronze-400 transition-colors" data-i18n="nav_contact">4. Murojaat
+            anketasi</a>
+        </nav>
+
+        <!-- Language Switcher & Order CTA -->
+        <div class="flex items-center gap-3">
+          <div class="flex items-center bg-slate-800/90 p-1 rounded-lg border border-slate-700 text-xs font-bold">
+            <button id="btn-lang-uz" onclick="setLanguage('uz')"
+              class="px-2.5 py-1 rounded-md transition-all bg-bronze-500 text-slate-950 shadow-sm">UZ</button>
+            <button id="btn-lang-ru" onclick="setLanguage('ru')"
+              class="px-2.5 py-1 rounded-md transition-all text-slate-300 hover:text-white">RU</button>
+          </div>
+
+          <a href="#contact"
+            class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-bronze-500 to-bronze-600 hover:from-bronze-600 hover:to-bronze-700 text-slate-950 text-sm font-extrabold shadow-md shadow-bronze-500/25 transition-all active:scale-95">
+            <i class="fa-solid fa-paper-plane text-xs"></i>
+            <span data-i18n="nav_cta">Buyurtma berish</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== 1-BO'LIM: KOMPANIYA HAQIDA QISQA MA'LUMOT ==================== -->
+  <section id="about" class="metallic-hero pt-32 pb-20 lg:pt-36 lg:pb-28 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+        <!-- Left Column: Company Intro -->
+        <div class="lg:col-span-7 space-y-6">
+          <div
+            class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-bronze-500/15 border border-bronze-500/30 text-bronze-300 text-xs font-bold uppercase tracking-wider">
+            <i class="fa-solid fa-award text-bronze-400"></i>
+            <span data-i18n="hero_badge">1-bo'lim · Kompaniya haqida rasmiy ma'lumot</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+            <span data-i18n="hero_title_1">«AMBAR-DISTRIBUTORS» MCHJ —</span>
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-bronze-300 via-amber-400 to-orange-400 block mt-1"
+              data-i18n="hero_title_2">Dush Traplari va Klapanlari Ulgurji Markazi</span>
+          </h1>
+
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl" data-i18n="hero_desc">
+            Kompaniyamiz O'zbekiston bo'ylab qurilish kompaniyalari, santexnika do'konlari va ulgurji bazalarni
+            zanglamas po'latdan (SUS 304) ishlangan zamonaviy <b>Guclu, Aqua Nova, Vava Drawbench, Vava Black</b> dush
+            traplari hamda latun va rezina klapanlar bilan birinchi qo'ldan ta'minlaydi.
+          </p>
+
+          <!-- Key Stats -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-2">
+            <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800">
+              <div class="text-2xl font-extrabold text-bronze-400">19 xil</div>
+              <div class="text-xs text-slate-400 mt-1" data-i18n="stat_1">Trap va klapan modellari</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800">
+              <div class="text-2xl font-extrabold text-slate-200">SUS 304</div>
+              <div class="text-xs text-slate-400 mt-1" data-i18n="stat_2">Zanglamas po'lat va latun</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800">
+              <div class="text-2xl font-extrabold text-white">100%</div>
+              <div class="text-xs text-slate-400 mt-1" data-i18n="stat_3">Hid ushlagich kafolati</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800">
+              <div class="text-2xl font-extrabold text-bronze-400">$0.60+</div>
+              <div class="text-xs text-slate-400 mt-1" data-i18n="stat_4">Ulgurji dilerlik narxlari</div>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#products"
+              class="inline-flex items-center gap-2.5 px-7 py-4 rounded-2xl bg-gradient-to-r from-bronze-500 to-bronze-600 hover:from-bronze-600 hover:to-bronze-700 text-slate-950 font-extrabold shadow-xl shadow-bronze-500/20 transition-all">
+              <i class="fa-solid fa-table-Cells-large"></i>
+              <span data-i18n="hero_btn_catalog">19 ta mahsulotni ko'rish</span>
+            </a>
+            <a href="#contact"
+              class="inline-flex items-center gap-2.5 px-7 py-4 rounded-2xl bg-slate-800/90 hover:bg-slate-700 text-white font-bold border border-slate-700 transition-all">
+              <i class="fa-solid fa-file-signature text-bronze-400"></i>
+              <span data-i18n="hero_btn_contact">Hamkorlik anketasi</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Company Official Passport & Stamp -->
+        <div class="lg:col-span-5">
+          <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl relative">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-5 mb-5">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-widest text-bronze-400 block"
+                  data-i18n="card_company_label">Rasmiy Korxona Pasporti</span>
+                <h2 class="text-xl font-extrabold text-white mt-1">«AMBAR-DISTRIBUTORS» MCHJ</h2>
+              </div>
+              <img src="images/company-stamp.jpg" alt="AMBAR-DISTRIBUTORS Stamp"
+                class="w-16 h-16 rounded-xl object-cover border-2 border-bronze-500/40 bg-white p-0.5 shadow-md">
+            </div>
+
+            <div class="space-y-3.5 text-sm">
+              <div class="flex items-start gap-3">
+                <i class="fa-solid fa-location-dot text-bronze-400 mt-1 w-4"></i>
+                <div>
+                  <span class="text-slate-400 text-xs block" data-i18n="req_address_label">Yuridik manzil:</span>
+                  <span class="text-slate-100 font-medium" data-i18n="req_address_val">Toshkent sh., Eski Chilonzor
+                    1-tor ko'chasi, 18-uy</span>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="fa-solid fa-building-columns text-bronze-400 mt-1 w-4"></i>
+                <div>
+                  <span class="text-slate-400 text-xs block" data-i18n="req_bank_label">Xizmat ko'rsatuvchi bank:</span>
+                  <span class="text-slate-100 font-medium">ChAKB «Orient Finans Bank» Chilonzor filiali</span>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-3 pt-2 border-t border-slate-800/80 text-xs">
+                <div class="bg-slate-950/60 p-3 rounded-xl border border-slate-800/80">
+                  <span class="text-slate-400 block">H/r (Р/с):</span>
+                  <span class="text-white font-bold font-mono">2020 8000 7051 6500 8001</span>
+                </div>
+                <div class="bg-slate-950/60 p-3 rounded-xl border border-slate-800/80">
+                  <span class="text-slate-400 block">INN / MFO / OKED:</span>
+                  <span class="text-white font-bold font-mono">307041434 · 01071 · 46490</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+              <span><i class="fa-regular fa-calendar-check text-bronze-400 mr-1"></i> <span
+                  data-i18n="price_date">Rasmiy dilerlik prays-listi</span></span>
+              <span class="text-bronze-400 font-semibold"><i class="fa-solid fa-check-double mr-1"></i>
+                Tasdiqlangan</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 2-BO'LIM: 19 TA MAHSULOT TURLARI (KATALOG) ==================== -->
+  <section id="products" class="py-20 bg-stone-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+        <div>
+          <div
+            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bronze-100 text-bronze-900 text-xs font-extrabold uppercase tracking-wider mb-3">
+            <i class="fa-solid fa-boxes-stacked text-bronze-600"></i>
+            <span data-i18n="sec2_badge">2-bo'lim · Rasmiy Prays-list (19 ta mahsulot)</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight" data-i18n="sec2_title">
+            Dush Traplari va Klapanlar Katalogi
+          </h2>
+          <p class="text-slate-600 mt-2 max-w-2xl" data-i18n="sec2_subtitle">
+            Barcha narxlar ulgurji dilerlik stavkasida AQSH dollarida ($) ko'rsatilgan. O'zingizga kerakli mahsulotni
+            tanlab, bir bosishda buyurtma anketasiga o'tishingiz mumkin.
+          </p>
+        </div>
+
+        <!-- Category Filter Buttons -->
+        <div class="flex flex-wrap gap-2">
+          <button onclick="filterProducts('all')" id="filter-all"
+            class="filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-white shadow-sm transition-all"
+            data-i18n="filter_all">
+            Barchasi (19)
+          </button>
+          <button onclick="filterProducts('linear')" id="filter-linear"
+            class="filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 transition-all"
+            data-i18n="filter_linear">
+            Vava & Drawbench (10)
+          </button>
+          <button onclick="filterProducts('classic')" id="filter-classic"
+            class="filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 transition-all"
+            data-i18n="filter_classic">
+            Guclu, Aqua Nova va Kvadrat (5)
+          </button>
+          <button onclick="filterProducts('valves')" id="filter-valves"
+            class="filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 transition-all"
+            data-i18n="filter_valves">
+            Klapan va Perexodniklar (4)
+          </button>
+        </div>
+      </div>
+
+      <!-- Products Grid (19 Items rendered via JS) -->
+      <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- Populated dynamically by JavaScript -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 3-BO'LIM: MIJOZLARDAN KELGAN FEEDBACKLAR ==================== -->
+  <section id="feedbacks" class="py-20 bg-white border-y border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-6">
+        <div>
+          <div
+            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100 text-amber-900 text-xs font-extrabold uppercase tracking-wider mb-3">
+            <i class="fa-solid fa-star text-amber-500"></i>
+            <span data-i18n="sec3_badge">3-bo'lim · Hamkorlar va ustalar fikrlari</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight" data-i18n="sec3_title">
+            Mijozlardan Kelgan Feedbacklar
+          </h2>
+          <p class="text-slate-600 mt-2 max-w-2xl" data-i18n="sec3_subtitle">
+            Qurilish kompaniyalari, professional santexnik ustalar va do'kon egalarining «AMBAR-DISTRIBUTORS» MCHJ
+            traplari haqidagi fikrlari.
+          </p>
+        </div>
+
+        <button onclick="openReviewModal()"
+          class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-sm font-bold shadow-md transition-all self-start sm:self-auto">
+          <i class="fa-solid fa-comment-medical text-bronze-400"></i>
+          <span data-i18n="btn_add_review">Fikr qoldirish</span>
+        </button>
+      </div>
+
+      <!-- Reviews Grid -->
+      <div id="reviews-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Populated dynamically by JS -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 4-BO'LIM: MUROJAAT QILISH UCHUN ANKETA ==================== -->
+  <section id="contact" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+        <!-- Left Info Column (Clean, Professional — No Exposed Bot Settings!) -->
+        <div class="lg:col-span-5 space-y-6">
+          <div
+            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bronze-500/20 border border-bronze-500/30 text-bronze-300 text-xs font-extrabold uppercase tracking-wider">
+            <i class="fa-solid fa-headset"></i>
+            <span data-i18n="sec4_badge">4-bo'lim · Onlayn Buyurtma va Murojaat Anketasi</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight" data-i18n="sec4_title">
+            Bizga Murojaat Qiling yoki Buyurtma Qoldiring
+          </h2>
+
+          <p class="text-slate-300 text-base leading-relaxed" data-i18n="sec4_desc">
+            Dilerlik hamkorligi yoki ulgurji xarid bo'yicha anketani to'ldiring — murojaatingiz darhol savdo
+            bo'limimizga yetib boradi va mutaxassislarimiz siz bilan bog'lanishadi.
+          </p>
+
+          <!-- Company Advantages Cards -->
+          <div class="space-y-4 pt-2 text-sm text-slate-300">
+            <div class="flex items-center gap-4 p-4 rounded-2xl bg-slate-800/70 border border-slate-700/80">
+              <div
+                class="w-11 h-11 rounded-xl bg-bronze-500/20 flex items-center justify-center text-bronze-400 text-lg shrink-0">
+                <i class="fa-solid fa-building-shield"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-400" data-i18n="contact_org_label">Rasmiy distribyutor:</div>
+                <div class="font-bold text-white">«AMBAR-DISTRIBUTORS» MCHJ</div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 p-4 rounded-2xl bg-slate-800/70 border border-slate-700/80">
+              <div
+                class="w-11 h-11 rounded-xl bg-bronze-500/20 flex items-center justify-center text-bronze-400 text-lg shrink-0">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-400" data-i18n="contact_addr_label">Manzil:</div>
+                <div class="font-bold text-white" data-i18n="req_address_val">Toshkent sh., Eski Chilonzor 1-tor
+                  ko'chasi, 18-uy</div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 p-4 rounded-2xl bg-slate-800/70 border border-slate-700/80">
+              <div
+                class="w-11 h-11 rounded-xl bg-bronze-500/20 flex items-center justify-center text-bronze-400 text-lg shrink-0">
+                <i class="fa-solid fa-truck-fast"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-400" data-i18n="contact_deliv_label">Yetkazib berish va to'lov:</div>
+                <div class="font-bold text-white" data-i18n="contact_deliv_val">O'zbekiston bo'ylab ulgurji yetkazib
+                  berish · Shartnoma asosida</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Form Column (Anketa) -->
+        <div class="lg:col-span-7">
+          <div class="bg-white text-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl border border-slate-100">
+            <h3 class="text-2xl font-extrabold text-slate-900 mb-2" data-i18n="form_heading">Dilerlik va Xarid Anketasi
+            </h3>
+            <p class="text-sm text-slate-500 mb-6" data-i18n="form_subheading">Ma'lumotlaringizni kiriting — arizangiz
+              tezkor ko'rib chiqiladi.</p>
+
+            <form id="trapOrderForm" onsubmit="submitTrapOrder(event)" class="space-y-5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <!-- Field 1: Name / Company -->
+                <div>
+                  <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2"
+                    data-i18n="label_name">
+                    Ismingiz yoki Korxona nomi *
+                  </label>
+                  <div class="relative">
+                    <i class="fa-solid fa-user-tie absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                    <input type="text" id="order-name" required placeholder="Masalan: Rustam / Stroy Santex"
+                      class="w-full pl-11 pr-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-bronze-500 focus:bg-white focus:ring-2 focus:ring-bronze-500/20 outline-none text-sm font-medium transition-all">
+                  </div>
+                </div>
+
+                <!-- Field 2: Phone -->
+                <div>
+                  <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2"
+                    data-i18n="label_phone">
+                    Telefon raqamingiz *
+                  </label>
+                  <div class="relative">
+                    <i class="fa-solid fa-phone absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                    <input type="tel" id="order-phone" required placeholder="+998 90 123 45 67"
+                      class="w-full pl-11 pr-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-bronze-500 focus:bg-white focus:ring-2 focus:ring-bronze-500/20 outline-none text-sm font-medium transition-all">
+                  </div>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+                <!-- Field 3: Selected Trap Product -->
+                <div class="sm:col-span-2">
+                  <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2"
+                    data-i18n="label_product">
+                    Tanlangan trap / mahsulot turi *
+                  </label>
+                  <div class="relative">
+                    <i class="fa-solid fa-layer-group absolute left-4 top-1/2 -translate-y-1/2 text-bronze-600"></i>
+                    <select id="order-product"
+                      class="w-full pl-11 pr-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-bronze-500 focus:bg-white focus:ring-2 focus:ring-bronze-500/20 outline-none text-sm font-semibold transition-all">
+                      <!-- Options populated dynamically from 19 products -->
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Field 4: Quantity -->
+                <div>
+                  <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2"
+                    data-i18n="label_qty">
+                    Miqdori (dona/quti)
+                  </label>
+                  <div class="relative">
+                    <i class="fa-solid fa-cubes absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                    <input type="text" id="order-qty" placeholder="Masalan: 50 dona"
+                      class="w-full pl-11 pr-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-bronze-500 focus:bg-white focus:ring-2 focus:ring-bronze-500/20 outline-none text-sm font-medium transition-all">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Field 5: Message / Note -->
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2"
+                  data-i18n="label_msg">
+                  Qo'shimcha izoh yoki savolingiz
+                </label>
+                <textarea id="order-msg" rows="3"
+                  placeholder="Yetkazib berish manzili, o'lchamlar yoki qo'shimcha savollaringiz..."
+                  class="w-full p-4 rounded-xl bg-slate-50 border border-slate-200 focus:border-bronze-500 focus:bg-white focus:ring-2 focus:ring-bronze-500/20 outline-none text-sm font-medium transition-all"></textarea>
+              </div>
+
+              <!-- Status Notification Banner -->
+              <div id="form-alert" class="hidden p-4 rounded-xl text-sm font-semibold"></div>
+
+              <!-- Submit Button -->
+              <button type="submit" id="submit-btn"
+                class="w-full py-4 px-6 rounded-xl bg-gradient-to-r from-bronze-500 to-bronze-600 hover:from-bronze-600 hover:to-bronze-700 text-slate-950 font-extrabold text-base shadow-lg shadow-bronze-500/25 flex items-center justify-center gap-2.5 transition-all active:scale-[0.99]">
+                <i class="fa-solid fa-paper-plane text-base"></i>
+                <span data-i18n="btn_submit">Buyurtma va murojaatni yuborish</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-slate-950 text-slate-400 py-10 border-t border-slate-800/80 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-bronze-500 flex items-center justify-center text-slate-950 font-black">
+          <i class="fa-solid fa-layer-group"></i>
+        </div>
+        <span>© 2026 <b>«AMBAR-DISTRIBUTORS» MCHJ</b> · Barcha huquqlar himoyalangan.</span>
+      </div>
+      <div class="text-slate-500">
+        INN: 307 041 434 · MFO: 01071 · Toshkent sh., Eski Chilonzor 1-tor ko'chasi, 18-uy
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MODAL: FIKR QOLDIRISH ==================== -->
+  <div id="review-modal"
+    class="fixed inset-0 z-50 hidden bg-slate-950/75 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-slate-100 relative">
+      <button onclick="closeReviewModal()"
+        class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-600">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <h3 class="text-xl font-extrabold text-slate-900 mb-1">Fikr va Mulohaza Qoldirish</h3>
+      <p class="text-xs text-slate-500 mb-5">Fikringiz saytning 3-bo'limiga qo'shiladi va Telegram-botga ham boradi.</p>
+
+      <form onsubmit="submitNewReview(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Ismingiz va Do'kon/Korxona nomi *</label>
+          <input type="text" id="rev-name" required placeholder="Masalan: Otabek — Santex Pro"
+            class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 outline-none text-sm">
+        </div>
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Hudud / Shahar *</label>
+          <input type="text" id="rev-city" required placeholder="Masalan: Toshkent sh., Jomiy bozori"
+            class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 outline-none text-sm">
+        </div>
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Fikringiz *</label>
+          <textarea id="rev-text" rows="3" required placeholder="Traplar sifati va hamkorlik haqida fikringiz..."
+            class="w-full p-4 rounded-xl bg-slate-50 border border-slate-200 outline-none text-sm"></textarea>
+        </div>
+        <button type="submit"
+          class="w-full py-3.5 rounded-xl bg-bronze-600 hover:bg-bronze-700 text-white font-bold text-sm shadow-md transition-all">
+          <i class="fa-solid fa-check mr-1.5"></i> Fikrni joylashtirish
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==================== JAVASCRIPT LOGIC ==================== -->
+  <script>
+    // =========================================================================
+    // TELEGRAM BOT CONFIGURATION (Yangi bot Tokeni shu yerga qo'yiladi)
+    // =========================================================================
+    const TELEGRAM_BOT_TOKEN = "8645395625:AAHDUoYd5XK0k60CGRLX7mPLjTUF04TPl8I";
+    const TELEGRAM_CHAT_ID = "724571432";
+
+    // 19 Products from "Прайс-лист с изображением трапов.xlsx"
+    const PRODUCTS = [
+      {
+        code: "28412",
+        category: "classic",
+        name_uz: "Guclu 6111 trap, 40 sm",
+        name_ru: "Трап Guclu 6111, 40 см",
+        spec_uz: "Zanglamas po'lat · Uzunligi 40 sm · Yonlama chiqishli",
+        spec_ru: "Нержавеющая сталь · Длина 40 см · Боковой выпуск",
+        price: "12.00",
+        image: "images/trap-28412.jpg",
+        badge: "Guclu 40 sm"
+      },
+      {
+        code: "28411",
+        category: "classic",
+        name_uz: "Guclu 6110 trap, 30 sm",
+        name_ru: "Трап Guclu 6110, 30 см",
+        spec_uz: "Zanglamas po'lat · Uzunligi 30 sm · Mustahkam korpus",
+        spec_ru: "Нержавеющая сталь · Длина 30 см · Прочный корпус",
+        price: "9.70",
+        image: "images/trap-28411.jpg",
+        badge: "Guclu 30 sm"
+      },
+      {
+        code: "28261",
+        category: "classic",
+        name_uz: "Yonlama trap Aqua Nova, 80x60",
+        name_ru: "Трап боковой Aqua Nova, 80х60",
+        spec_uz: "Aqua Nova seriyasi · O'lchami 80x60 · Yonlama ulanish",
+        spec_ru: "Серия Aqua Nova · Размер 80х60 · Боковое подключение",
+        price: "13.90",
+        image: "images/trap-28261.jpg",
+        badge: "Aqua Nova"
+      },
+      {
+        code: "28185",
+        category: "valves",
+        name_uz: "Yonlama trap-perexodnik 50x100",
+        name_ru: "Трап-переходник боковой 50х100",
+        spec_uz: "Quvurlar uchun mustahkam yonlama perexodnik 50x100",
+        spec_ru: "Переходник боковой для трапа 50х100",
+        price: "1.27",
+        image: "images/trap-28185.jpg",
+        badge: "50x100"
+      },
+      {
+        code: "28179",
+        category: "valves",
+        name_uz: "Trap uchun latun klapan",
+        name_ru: "Клапан для трапа латунный",
+        spec_uz: "100% Latun (mis qotishmasi) · Hid va qayta oqimdan himoya",
+        spec_ru: "Латунный обратный клапан от запаха для трапа",
+        price: "1.10",
+        image: "images/trap-28179.jpg",
+        badge: "Latun Klapan"
+      },
+      {
+        code: "28178",
+        category: "valves",
+        name_uz: "Plastmassa universal trap klapani",
+        name_ru: "Клапан для трапа пластмассовый универсальный",
+        spec_uz: "Universal o'lcham · Hid ushlagich mexanizmli",
+        spec_ru: "Универсальный пластиковый клапан от запаха",
+        price: "0.60",
+        image: "images/trap-28178.jpg",
+        badge: "Universal"
+      },
+      {
+        code: "28177",
+        category: "valves",
+        name_uz: "Trap uchun rezina klapan",
+        name_ru: "Клапан для трапа резиновый",
+        spec_uz: "Egiluvchan silikon/rezina · Kanalizatsiya hidini 100% to'sadi",
+        spec_ru: "Эластичный резиновый клапан с защитой от запаха",
+        price: "0.80",
+        image: "images/trap-28177.jpg",
+        badge: "Rezina Klapan"
+      },
+      {
+        code: "28010",
+        category: "linear",
+        name_uz: "Trap Vava Drawbench, 10x60 sm",
+        name_ru: "Трап Vava Drawbench, 10х60 см",
+        spec_uz: "Vava Drawbench seriyasi · 10x60 sm · Cho'tkalangan po'lat",
+        spec_ru: "Серия Vava Drawbench · 10х60 см · Матовая сталь",
+        price: "12.30",
+        image: "images/trap-28010.jpg",
+        badge: "10x60 sm"
+      },
+      {
+        code: "28009",
+        category: "linear",
+        name_uz: "Trap Vava Drawbench, 10x50 sm",
+        name_ru: "Трап Vava Drawbench, 10х50 см",
+        spec_uz: "Vava Drawbench seriyasi · 10x50 sm · Zanglamas po'lat",
+        spec_ru: "Серия Vava Drawbench · 10х50 см · Нержавеющая сталь",
+        price: "10.63",
+        image: "images/trap-28009.jpg",
+        badge: "10x50 sm"
+      },
+      {
+        code: "28007",
+        category: "linear",
+        name_uz: "Trap Vava Drawbench, 10x30 sm",
+        name_ru: "Трап Vava Drawbench, 10х30 см",
+        spec_uz: "Vava Drawbench seriyasi · 10x30 sm · Ixcham va chidamli",
+        spec_ru: "Серия Vava Drawbench · 10х30 см · Компактный размер",
+        price: "7.90",
+        image: "images/trap-28007.jpg",
+        badge: "10x30 sm"
+      },
+      {
+        code: "28006",
+        category: "linear",
+        name_uz: "Trap Vava Drawbench, 10x20 sm",
+        name_ru: "Трап Vava Drawbench, 10х20 см",
+        spec_uz: "Vava Drawbench seriyasi · 10x20 sm · Kichik dush zonalari uchun",
+        spec_ru: "Серия Vava Drawbench · 10х20 см · Нержавеющая сталь",
+        price: "6.71",
+        image: "images/trap-28006.jpg",
+        badge: "10x20 sm"
+      },
+      {
+        code: "28005",
+        category: "linear",
+        name_uz: "Trap Vava Black, 10x60 sm",
+        name_ru: "Трап Vava Black, 10х60 см",
+        spec_uz: "Mat qora (Matte Black) · 10x60 sm · Premium Loft dizayn",
+        spec_ru: "Матовый черный (Matte Black) · 10х60 см · Премиум дизайн",
+        price: "12.30",
+        image: "images/trap-28005.jpg",
+        badge: "Black 10x60"
+      },
+      {
+        code: "28004",
+        category: "linear",
+        name_uz: "Trap Vava Black, 10x50 sm",
+        name_ru: "Трап Vava Black, 10х50 см",
+        spec_uz: "Mat qora (Matte Black) · 10x50 sm · Zamonaviy yuvinish xonalari uchun",
+        spec_ru: "Матовый черный (Matte Black) · 10х50 см",
+        price: "10.63",
+        image: "images/trap-28004.jpg",
+        badge: "Black 10x50"
+      },
+      {
+        code: "28003",
+        category: "linear",
+        name_uz: "Trap Vava Black, 10x40 sm",
+        name_ru: "Трап Vava Black, 10х40 см",
+        spec_uz: "Mat qora (Matte Black) · 10x40 sm · Korroziyaga chidamli qoplama",
+        spec_ru: "Матовый черный (Matte Black) · 10х40 см",
+        price: "8.90",
+        image: "images/trap-28003.jpg",
+        badge: "Black 10x40"
+      },
+      {
+        code: "27990",
+        category: "linear",
+        name_uz: "Trap Drawbench, 3,2x50 sm",
+        name_ru: "Трап Drawbench, 3,2х50 см",
+        spec_uz: "Ultra-ingichka (Slim 3.2 sm) · Uzunligi 50 sm · Minimalist uslub",
+        spec_ru: "Ультратонкий (Slim 3,2 см) · Длина 50 см · Серия Drawbench",
+        price: "17.07",
+        image: "images/trap-27990.jpg",
+        badge: "Slim 3.2x50"
+      },
+      {
+        code: "27989",
+        category: "linear",
+        name_uz: "Trap Drawbench, 3,2x40 sm",
+        name_ru: "Трап Drawbench, 3,2х40 см",
+        spec_uz: "Ultra-ingichka (Slim 3.2 sm) · Uzunligi 40 sm · SUS 304",
+        spec_ru: "Ультратонкий (Slim 3,2 см) · Длина 40 см · SUS 304",
+        price: "14.90",
+        image: "images/trap-27989.jpg",
+        badge: "Slim 3.2x40"
+      },
+      {
+        code: "27988",
+        category: "linear",
+        name_uz: "Trap Drawbench, 3,2x30 sm",
+        name_ru: "Трап Drawbench, 3,2х30 см",
+        spec_uz: "Ultra-ingichka (Slim 3.2 sm) · Uzunligi 30 sm · Tez suv tortish",
+        spec_ru: "Ультратонкий (Slim 3,2 см) · Длина 30 см · Высокая пропускная способность",
+        price: "12.30",
+        image: "images/trap-27988.jpg",
+        badge: "Slim 3.2x30"
+      },
+      {
+        code: "27987",
+        category: "classic",
+        name_uz: "Gray trapi, 15x15, d50",
+        name_ru: "Трап Gray, 15х15, d50",
+        spec_uz: "Kvadrat 15x15 sm · Quvur diametri d50 · Kulrang grafit rang",
+        spec_ru: "Квадратный 15х15 см · Диаметр d50 · Цвет графит (Gray)",
+        price: "6.10",
+        image: "images/trap-27987.jpg",
+        badge: "15x15 d50"
+      },
+      {
+        code: "27986",
+        category: "classic",
+        name_uz: "Trap SUS, 15x15, d50",
+        name_ru: "Трап SUS, 15х15, d50",
+        spec_uz: "Kvadrat 15x15 sm · Zanglamas po'lat SUS · d50 chiqishli",
+        spec_ru: "Квадратный 15х15 см · Нержавеющая сталь SUS · Выпуск d50",
+        price: "2.50",
+        image: "images/trap-27986.jpg",
+        badge: "SUS 15x15"
+      }
+    ];
+
+    // Default Customer Reviews (Section 3)
+    const DEFAULT_REVIEWS = [
+      {
+        name: "Jamshid Xoliqov — «Stroy Komplekt» MChJ",
+        city: "Toshkent sh., Jomiy qurilish bozori",
+        text_uz: "Yangi qurilayotgan ko'p qavatli uylar va kottejlar uchun Vava Black (10x60) va Drawbench (3,2x50) traplarini «AMBAR-DISTRIBUTORS» dan ulgurji olamiz. Po'lat qalinligi va sifati a'lo darajada!",
+        text_ru: "Для новостроек и коттеджей закупаем оптом трапы Vava Black и тонкие Drawbench 3,2х50 у «AMBAR-DISTRIBUTORS». Толщина стали и комплектация отличные!"
+      },
+      {
+        name: "komiljon Usta — Professional santexnik-montajchi",
+        city: "Toshkent viloyati",
+        text_uz: "Mijozlarimga doim Guclu va Aqua Nova traplarini hamda latun klapanlarni tavsiya qilaman. O'rnatishga qulay, suvni tez tortadi va xonaga umuman hid chiqarmaydi.",
+        text_ru: "Своим клиентам всегда ставлю трапы Guclu, Aqua Nova и латунные клапаны от этой компании. Удобный монтаж и 100% защита от запаха из канализации."
+      },
+      {
+        name: "Farruxbek Normatov — «Vodiysantex» ulgurji bazasi",
+        city: "Andijon sh.",
+        text_uz: "15x15 kvadrat SUS traplar ($2.50) va universal klapanlar ($0.60) bozorimizda eng xaridorgir tovarlar. Narxlari birinchi qo'ldan bo'lgani uchun do'konlarga tarqatish juda foydali.",
+        text_ru: "Квадратные трапы SUS 15х15 ($2.50) и клапаны ($0.60–$1.10) — самые ходовые позиции на нашем складе. Отличные дилерские цены."
+      },
+      {
+        name: "Azizbek Maqsudov — «Euro-Vanna» saloni",
+        city: "Samarqand sh.",
+        text_uz: "Ingichka Slim 3.2 sm Drawbench va qora Vava traplari zamonaviy kafellar bilan juda chiroyli chiqadi. Yetkazib berish doim o'z vaqtida.",
+        text_ru: "Ультратонкие трапы Drawbench 3,2 см и черные матовые Vava Black идеально подходят под современный керамогранит. Поставки всегда вовремя."
+      }
+    ];
+
+    let currentLang = 'uz';
+    let currentCategory = 'all';
+
+    const I18N = {
+      uz: {
+        nav_subtitle: "«AMBAR-DISTRIBUTORS» MCHJ",
+        nav_about: "1. Kompaniya haqida",
+        nav_products: "2. Katalog (19)",
+        nav_feedbacks: "3. Mijozlar fikrlari",
+        nav_contact: "4. Murojaat anketasi",
+        nav_cta: "Buyurtma berish",
+        hero_badge: "1-bo'lim · Kompaniya haqida rasmiy ma'lumot",
+        hero_title_1: "«AMBAR-DISTRIBUTORS» MCHJ —",
+        hero_title_2: "Dush Traplari va Klapanlari Ulgurji Markazi",
+        hero_desc: "Kompaniyamiz O'zbekiston bo'ylab qurilish kompaniyalari, santexnika do'konlari va ulgurji bazalarni zanglamas po'latdan (SUS 304) ishlangan zamonaviy Guclu, Aqua Nova, Vava Drawbench, Vava Black dush traplari hamda latun va rezina klapanlar bilan birinchi qo'ldan ta'minlaydi.",
+        stat_1: "Trap va klapan modellari",
+        stat_2: "Zanglamas po'lat va latun",
+        stat_3: "Hid ushlagich kafolati",
+        stat_4: "Ulgurji dilerlik narxlari",
+        hero_btn_catalog: "19 ta mahsulotni ko'rish",
+        hero_btn_contact: "Hamkorlik anketasi",
+        card_company_label: "Rasmiy Korxona Pasporti",
+        req_address_label: "Yuridik manzil:",
+        req_address_val: "Toshkent sh., Eski Chilonzor 1-tor ko'chasi, 18-uy",
+        req_bank_label: "Xizmat ko'rsatuvchi bank:",
+        price_date: "Rasmiy dilerlik prays-listi",
+        sec2_badge: "2-bo'lim · Rasmiy Prays-list (19 ta mahsulot)",
+        sec2_title: "Dush Traplari va Klapanlar Katalogi",
+        sec2_subtitle: "Barcha narxlar ulgurji dilerlik stavkasida AQSH dollarida ($) ko'rsatilgan. O'zingizga kerakli mahsulotni tanlab, bir bosishda buyurtma anketasiga o'tishingiz mumkin.",
+        filter_all: "Barchasi (19)",
+        filter_linear: "Vava & Drawbench (10)",
+        filter_classic: "Guclu, Aqua Nova va Kvadrat (5)",
+        filter_valves: "Klapan va Perexodniklar (4)",
+        sec3_badge: "3-bo'lim · Hamkorlar va ustalar fikrlari",
+        sec3_title: "Mijozlardan Kelgan Feedbacklar",
+        sec3_subtitle: "Qurilish kompaniyalari, professional santexnik ustalar va do'kon egalarining «AMBAR-DISTRIBUTORS» MCHJ traplari haqidagi fikrlari.",
+        btn_add_review: "Fikr qoldirish",
+        sec4_badge: "4-bo'lim · Onlayn Buyurtma va Murojaat Anketasi",
+        sec4_title: "Bizga Murojaat Qiling yoki Buyurtma Qoldiring",
+        sec4_desc: "Dilerlik hamkorligi yoki ulgurji xarid bo'yicha anketani to'ldiring — murojaatingiz darhol savdo bo'limimizga yetib boradi va mutaxassislarimiz siz bilan bog'lanishadi.",
+        contact_org_label: "Rasmiy distribyutor:",
+        contact_addr_label: "Manzil:",
+        contact_deliv_label: "Yetkazib berish va to'lov:",
+        contact_deliv_val: "O'zbekiston bo'ylab ulgurji yetkazib berish · Shartnoma asosida",
+        form_heading: "Dilerlik va Xarid Anketasi",
+        form_subheading: "Ma'lumotlaringizni kiriting — arizangiz tezkor ko'rib chiqiladi.",
+        label_name: "Ismingiz yoki Korxona nomi *",
+        label_phone: "Telefon raqamingiz *",
+        label_product: "Tanlangan trap / mahsulot turi *",
+        label_qty: "Miqdori (dona/quti)",
+        label_msg: "Qo'shimcha izoh yoki savolingiz",
+        btn_submit: "Buyurtma va murojaatni yuborish",
+        card_code: "Kod:",
+        card_price_label: "Ulgurji dilerlik narxi",
+        card_order_btn: "Tanlash va Buyurtma",
+        unit: "dona",
+        all_products_option: "Barcha turdagi trap va klapanlar (Prays-list bo'yicha)"
+      },
+      ru: {
+        nav_subtitle: "ООО «AMBAR-DISTRIBUTORS»",
+        nav_about: "1. О компании",
+        nav_products: "2. Каталог (19)",
+        nav_feedbacks: "3. Отзывы клиентов",
+        nav_contact: "4. Анкета заказа",
+        nav_cta: "Оставить заявку",
+        hero_badge: "Раздел 1 · Официальная информация о компании",
+        hero_title_1: "ООО «AMBAR-DISTRIBUTORS» —",
+        hero_title_2: "Оптовый Центр Душевых Трапов и Клапанов",
+        hero_desc: "Наша компания обеспечивает строительные организации, магазины сантехники и оптовые базы по всему Узбекистану современными душевыми трапами из нержавеющей стали (SUS 304) Guclu, Aqua Nova, Vava Drawbench, Vava Black, а также латунными и резиновыми клапанами из первых рук.",
+        stat_1: "Моделей трапов и клапанов",
+        stat_2: "Нержавеющая сталь и латунь",
+        stat_3: "Защита от запаха",
+        stat_4: "Оптовые дилерские цены",
+        hero_btn_catalog: "Смотреть 19 товаров",
+        hero_btn_contact: "Анкета партнера",
+        card_company_label: "Паспорт Организации",
+        req_address_label: "Юридический адрес:",
+        req_address_val: "г. Ташкент, 1-й проезд Эски Чиланзар, дом 18",
+        req_bank_label: "Обслуживающий банк:",
+        price_date: "Официальный дилерский прайс-лист",
+        sec2_badge: "Раздел 2 · Официальный прайс-лист (19 товаров)",
+        sec2_title: "Каталог Душевых Трапов и Клапанов",
+        sec2_subtitle: "Все цены указаны по оптовой дилерской ставке в долларах США ($). Выберите нужную модель для быстрого оформления заявки.",
+        filter_all: "Все товары (19)",
+        filter_linear: "Vava & Drawbench (10)",
+        filter_classic: "Guclu, Aqua Nova и Квадратные (5)",
+        filter_valves: "Клапаны и Переходники (4)",
+        sec3_badge: "Раздел 3 · Отзывы партнеров и мастеров",
+        sec3_title: "Отзывы Наших Клиентов",
+        sec3_subtitle: "Мнения строительных компаний, мастеров-сантехников и владельцев магазинов о продукции ООО «AMBAR-DISTRIBUTORS».",
+        btn_add_review: "Оставить отзыв",
+        sec4_badge: "Раздел 4 · Онлайн-анкета для заказа и обращения",
+        sec4_title: "Свяжитесь с Нами или Оставьте Заявку",
+        sec4_desc: "Заполните анкету для дилерского сотрудничества или оптового заказа — ваша заявка сразу поступит в отдел продаж.",
+        contact_org_label: "Официальный дистрибьютор:",
+        contact_addr_label: "Адрес:",
+        contact_deliv_label: "Доставка и оплата:",
+        contact_deliv_val: "Оптовая доставка по Узбекистану · По договору",
+        form_heading: "Дилерская Анкета Заказа",
+        form_subheading: "Заполните поля ниже — заявка будет оперативно обработана.",
+        label_name: "Ваше имя или Организация *",
+        label_phone: "Номер телефона *",
+        label_product: "Выбранный трап / товар *",
+        label_qty: "Количество (шт./уп.)",
+        label_msg: "Дополнительный комментарий",
+        btn_submit: "Отправить заявку",
+        card_code: "Код:",
+        card_price_label: "Оптовая дилерская цена",
+        card_order_btn: "Выбрать для заказа",
+        unit: "шт.",
+        all_products_option: "Все виды трапов и клапанов (По прайс-листу)"
+      }
+    };
+
+    function populateProductDropdown() {
+      const sel = document.getElementById('order-product');
+      const t = I18N[currentLang];
+      const currentVal = sel.value;
+      let html = `<option value="${t.all_products_option}">${t.all_products_option}</option>`;
+      PRODUCTS.forEach(p => {
+        const name = currentLang === 'uz' ? p.name_uz : p.name_ru;
+        const val = `${p.code} — ${name} — $${p.price}`;
+        html += `<option value="${val}">${val}</option>`;
+      });
+      sel.innerHTML = html;
+      if (currentVal) {
+        for (let i = 0; i < sel.options.length; i++) {
+          if (sel.options[i].value.startsWith(currentVal.split(' — ')[0])) {
+            sel.selectedIndex = i;
+            break;
+          }
+        }
+      }
+    }
+
+    function renderProducts() {
+      const grid = document.getElementById('products-grid');
+      const t = I18N[currentLang];
+      const filtered = currentCategory === 'all'
+        ? PRODUCTS
+        : PRODUCTS.filter(p => p.category === currentCategory);
+
+      grid.innerHTML = filtered.map(p => {
+        const name = currentLang === 'uz' ? p.name_uz : p.name_ru;
+        const spec = currentLang === 'uz' ? p.spec_uz : p.spec_ru;
+        return `
+          <div class="card-metallic bg-white rounded-2xl border border-slate-200/90 overflow-hidden flex flex-col justify-between shadow-sm">
+            <div>
+              <!-- Image Container -->
+              <div class="relative h-56 bg-slate-900 flex items-center justify-center overflow-hidden p-2">
+                <img src="${p.image}" alt="${name}" class="trap-photo w-full h-full object-contain rounded-lg bg-white">
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-slate-950/85 backdrop-blur-sm text-bronze-400 text-[11px] font-bold border border-bronze-500/30">
+                  ${t.card_code} ${p.code}
+                </span>
+                <span class="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-bronze-500 text-slate-950 text-[10px] font-extrabold uppercase shadow">
+                  ${p.badge}
+                </span>
+              </div>
+
+              <!-- Info Container -->
+              <div class="p-4">
+                <h3 class="text-sm font-extrabold text-slate-900 leading-snug line-clamp-2 min-h-[2.5rem]">${name}</h3>
+                <p class="text-xs text-slate-500 mt-1.5 line-clamp-2">${spec}</p>
+              </div>
+            </div>
+
+            <!-- Price & Action Footer -->
+            <div class="px-4 pb-4 pt-3 border-t border-slate-100">
+              <div class="flex items-baseline justify-between mb-3">
+                <span class="text-[11px] text-slate-400 font-medium">${t.card_price_label}</span>
+                <div class="text-right">
+                  <span class="text-xl font-black text-bronze-600">$${p.price}</span>
+                  <span class="text-xs text-slate-500 font-semibold">/ ${t.unit}</span>
+                </div>
+              </div>
+              <button onclick="selectProductForOrder('${p.code}')"
+                class="w-full py-2.5 px-3 rounded-xl bg-slate-900 hover:bg-bronze-600 text-white text-xs font-bold transition-colors flex items-center justify-center gap-2">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span>${t.card_order_btn}</span>
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function filterProducts(cat) {
+      currentCategory = cat;
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.className = "filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 transition-all";
+      });
+      const activeBtn = document.getElementById('filter-' + cat);
+      if (activeBtn) {
+        activeBtn.className = "filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-white shadow-sm transition-all";
+      }
+      renderProducts();
+    }
+
+    function selectProductForOrder(code) {
+      const sel = document.getElementById('order-product');
+      for (let i = 0; i < sel.options.length; i++) {
+        if (sel.options[i].value.startsWith(code + ' —')) {
+          sel.selectedIndex = i;
+          break;
+        }
+      }
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+      setTimeout(() => document.getElementById('order-name').focus(), 600);
+    }
+
+    // Reviews
+    function getSavedReviews() {
+      try {
+        const extra = JSON.parse(localStorage.getItem('trapy_extra_reviews') || '[]');
+        return [...extra, ...DEFAULT_REVIEWS];
+      } catch (e) {
+        return DEFAULT_REVIEWS;
+      }
+    }
+
+    function renderReviews() {
+      const grid = document.getElementById('reviews-grid');
+      const list = getSavedReviews();
+      grid.innerHTML = list.map(r => {
+        const text = currentLang === 'uz' ? (r.text_uz || r.text) : (r.text_ru || r.text);
+        return `
+          <div class="p-6 rounded-2xl bg-stone-50 border border-slate-200/80 flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="flex items-center gap-1 text-amber-400 text-xs mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-sm text-slate-700 leading-relaxed italic">"${text}"</p>
+            </div>
+            <div class="mt-5 pt-4 border-t border-slate-200/70 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-bronze-600 text-white font-extrabold flex items-center justify-center text-sm">
+                ${r.name.charAt(0).toUpperCase()}
+              </div>
+              <div>
+                <div class="text-xs font-extrabold text-slate-900">${r.name}</div>
+                <div class="text-[11px] text-slate-500"><i class="fa-solid fa-location-dot text-bronze-600 mr-1"></i>${r.city}</div>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      const t = I18N[lang];
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (t[key]) el.textContent = t[key];
+      });
+      document.getElementById('btn-lang-uz').className = lang === 'uz'
+        ? "px-2.5 py-1 rounded-md transition-all bg-bronze-500 text-slate-950 shadow-sm"
+        : "px-2.5 py-1 rounded-md transition-all text-slate-300 hover:text-white";
+      document.getElementById('btn-lang-ru').className = lang === 'ru'
+        ? "px-2.5 py-1 rounded-md transition-all bg-bronze-500 text-slate-950 shadow-sm"
+        : "px-2.5 py-1 rounded-md transition-all text-slate-300 hover:text-white";
+      populateProductDropdown();
+      renderProducts();
+      renderReviews();
+    }
+
+    // Send message to Telegram Bot
+    async function sendToTelegramBot(htmlText) {
+      if (!TELEGRAM_BOT_TOKEN || TELEGRAM_BOT_TOKEN === "YOUR_NEW_BOT_TOKEN_HERE") {
+        return { ok: false, needToken: true };
+      }
+      const tgRes = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          chat_id: TELEGRAM_CHAT_ID,
+          text: htmlText,
+          parse_mode: 'HTML'
+        })
+      });
+      const tgData = await tgRes.json();
+      return { ok: Boolean(tgData.ok), error: tgData.description };
+    }
+
+    async function submitTrapOrder(e) {
+      e.preventDefault();
+      const name = document.getElementById('order-name').value.trim();
+      const phone = document.getElementById('order-phone').value.trim();
+      const product = document.getElementById('order-product').value;
+      const qty = document.getElementById('order-qty').value.trim() || "Ko'rsatilmagan";
+      const msg = document.getElementById('order-msg').value.trim() || "Izoh yo'q";
+      const alertBox = document.getElementById('form-alert');
+      const btn = document.getElementById('submit-btn');
+
+      btn.disabled = true;
+      alertBox.className = "p-4 rounded-xl text-sm font-semibold bg-slate-100 text-slate-700 block";
+      alertBox.textContent = "⏳ Ariza yuborilmoqda...";
+
+      const now = new Date().toLocaleString('uz-UZ', { timeZone: 'Asia/Tashkent' });
+      const text = `🚿 <b>YANGI BUYURTMA (TRAPLAR VA KLAPANLAR)</b>\n` +
+        `🏢 <b>Kompaniya:</b> «AMBAR-DISTRIBUTORS» MCHJ\n` +
+        `━━━━━━━━━━━━━━━━━━━\n` +
+        `👤 <b>Mijoz / Korxona:</b> ${name}\n` +
+        `📞 <b>Telefon:</b> <code>${phone}</code>\n` +
+        `📦 <b>Tanlangan tovar:</b> ${product}\n` +
+        `🔢 <b>Miqdori:</b> ${qty}\n` +
+        `💬 <b>Izoh:</b> ${msg}\n` +
+        `━━━━━━━━━━━━━━━━━━━\n` +
+        `⏰ <b>Vaqt:</b> ${now}`;
+
+      try {
+        const result = await sendToTelegramBot(text);
+        if (result.ok) {
+          alertBox.className = "p-4 rounded-xl text-sm font-semibold bg-emerald-100 text-emerald-800 border border-emerald-200 block";
+          alertBox.innerHTML = `<i class="fa-solid fa-circle-check mr-1.5"></i> Arizangiz muvaffaqiyatli qabul qilindi va Telegram-botga yetkazildi!`;
+          document.getElementById('trapOrderForm').reset();
+        } else if (result.needToken) {
+          alertBox.className = "p-4 rounded-xl text-sm font-semibold bg-amber-100 text-amber-900 border border-amber-300 block";
+          alertBox.innerHTML = `<i class="fa-solid fa-circle-info mr-1.5"></i> Yangi Telegram Bot Token hali kodga (<code>TELEGRAM_BOT_TOKEN</code>) kiritilmagan.`;
+        } else {
+          alertBox.className = "p-4 rounded-xl text-sm font-semibold bg-rose-100 text-rose-800 border border-rose-200 block";
+          alertBox.textContent = "❌ Xatolik: " + (result.error || "Telegram-botga yuborib bo'lmadi.");
+        }
+      } catch (err) {
+        alertBox.className = "p-4 rounded-xl text-sm font-semibold bg-rose-100 text-rose-800 border border-rose-200 block";
+        alertBox.textContent = "❌ Ulanish xatoligi: " + err.message;
+      } finally {
+        btn.disabled = false;
+      }
+    }
+
+    function openReviewModal() {
+      document.getElementById('review-modal').classList.remove('hidden');
+    }
+    function closeReviewModal() {
+      document.getElementById('review-modal').classList.add('hidden');
+    }
+    async function submitNewReview(e) {
+      e.preventDefault();
+      const name = document.getElementById('rev-name').value.trim();
+      const city = document.getElementById('rev-city').value.trim();
+      const text = document.getElementById('rev-text').value.trim();
+
+      const extra = JSON.parse(localStorage.getItem('trapy_extra_reviews') || '[]');
+      extra.unshift({ name, city, text_uz: text, text_ru: text });
+      localStorage.setItem('trapy_extra_reviews', JSON.stringify(extra));
+
+      renderReviews();
+      closeReviewModal();
+      e.target.reset();
+
+      const tgText = `⭐ <b>YANGI MIJOZ FIKRI (TRAPLAR SAYTI)</b>\n👤 <b>Mijoz:</b> ${name}\n📍 <b>Hudud:</b> ${city}\n💬 <b>Fikr:</b> "${text}"`;
+      try { await sendToTelegramBot(tgText); } catch (err) { }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      populateProductDropdown();
+      renderProducts();
+      renderReviews();
+    });
+  </script>
+</body>
+
+</html>
